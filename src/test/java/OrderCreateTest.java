@@ -21,7 +21,6 @@ public class OrderCreateTest {
     private String accessToken;
     private List<String> ingredients;
     private List<String> invalidIngredients;
-    private String requestBody;
 
     @Before
     public void setUp() {
@@ -38,7 +37,6 @@ public class OrderCreateTest {
 
         ingredients = Arrays.asList("\"61c0c5a71d1f82001bdaaa6d\"", "\"61c0c5a71d1f82001bdaaa71\"");
         invalidIngredients = Arrays.asList("\"invalid_hash_1\"", "\"invalid_hash_2\"");
-        requestBody = "{\"ingredients\": " + ingredients + "}";
     }
 
     @Test
